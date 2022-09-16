@@ -1,0 +1,24 @@
+
+Ho scelto di implementare la struttura dati richiesta estendendo type exp con Dictionary of (ide * exp)list ; exp e' poi esteso  con :
+Estr of string | Get of exp * ide | Agg of exp * ide * exp | Rem of exp * ide | Clear of exp | ApplyOver of exp * exp .
+Tipi di exp utili a implementare le operazioni che si richiedono al dizionario. 
+ 
+-Estr che rappresenta il tipo stringa.
+
+-Get prende un exp di tipo Dictionary e un ide che rappresenta la chiava di cui vogliamo cercare il valore  che nell'eval viene trovato tramite una
+ funzione ausiliaria lookup.
+
+-Agg prende un exp di tipo Dictionary , un ide e un exp che rappresentano la chive e il valore che gli vogliamo associare .
+
+-Rem prende un exp di tipo Dictionary e un ide che rappresenta la chiave del valore che vogliamo rimuovere.
+
+-Clear prende exp di tipo Dictionary che rappresenta il Dizionario di cui vogliamo fare la clear. 
+
+-ApplyOver prende un exp che rappresenta la funzione che vogliamo applicare al dizionario e un exp che rappresenta il dizionario su cui vogliamo   
+ applicare la funzione .
+
+I tipi esprimibili evT saranno invece estesi con DictionaryVal of (ide * evT)list tipo concreto dei dizionari e Str of string tipo concreto delle stringhe.
+
+L'interprete a sua volta e' stato esteso con tutti gli exp aggiunti cercando di utilizzare funzioni ausiliarie per rendere piu' comprensibili le varie operazioni svolte .
+
+
